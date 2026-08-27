@@ -1,0 +1,54 @@
+import java.util.*;
+import java.util.function.*;
+
+// A simple "mini-stream" class
+class MyStream<T> {
+    private List<T> data;
+
+    private MyStream(List<T> data) {
+        this.data = data;
+    }
+
+    // Factory method
+    public static <T> MyStream<T> of(List<T> list) {
+        return new MyStream<>(list);
+    }
+
+    // filter operation
+    public MyStream<T> filter(Predicate<T> predicate) {
+        List<T> filtered = new ArrayList<>();
+        for (T item : data) {
+            if (predicate.test(item)) {
+                filtered.add(item);
+            }
+        }
+        return new MyStream<>(filtered); // return a new stream for chaining
+    }
+
+    // map operation
+    public <R> MyStream<R> map(Function<T, R> mapper) {
+        List<R> mapped = new ArrayList<>();
+        for (T item : data) {
+            mapped.add(mapper.apply(item));
+        }
+        return new MyStream<>(mapped);
+    }
+
+    // terminal operation
+    public void forEach(Consumer<T> consumer) {
+        for (T item : data) {
+            consumer.accept(item);
+        }
+    }
+}
+
+public class MiniStreamDemo {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(2, 4, 6, 7, 9, 12);
+
+        MyStream.of(numbers)               // source
+                .filter(n -> n % 2 == 0)   // intermediate op
+                .map(n -> n * n)           // intermediate op
+                .forEach(System.out::println); // terminal op
+    }
+}
