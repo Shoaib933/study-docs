@@ -1,0 +1,31 @@
+//database create
+//database use
+
+//table create query
+
+create table expense(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	title VARCHAR(100) NOT NULL,
+	amount INT NOT NULL,
+	payment_method VARCHAR(10) NOT NULL,
+	spent_date DATE,
+	place VARCHAR(10)
+);
+
+//insert single row
+insert into expense(title,amount,payment_method,spent_date,place) values 
+('morning lunch',666,'UPI','2025-12-02','LKO');
+
+//insert multiple value:
+
+insert into expense(title,amount,payment_method,spent_date,place) values 
+('morning lunch',666,'UPI','2025-12-02','LKO'),
+('mobile recharge',999,'UPI','2025-12-04','Delhi'),
+('Iphone 16',90000,'Card','2025-12-04','LKO'),
+('Laptop',45000,'UPI','2025-12-02','LKO')
+
+;
+
+//select
+
+select * from expense; 
