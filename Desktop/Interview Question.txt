@@ -1,0 +1,8 @@
+Q.1>new vs newInstance()
+Q.2>If we want to create an object by using newInstance() method , corresponding class does not have default constructor which exception can be raised?
+Q.3>Which modifier is applicabe with interface.
+Q.4>how to analyze performance issue in springboot app.
+Q.5>How to optimize spring boot startup time in production?
+Q.6>Find second highest salary employeee of each department.
+Q7.>Unchecked vs Checked Exceptions
+Q.8>If submit() method with runnable will not return any value then what is the point of using Future type instead of void?

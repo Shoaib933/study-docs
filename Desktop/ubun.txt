@@ -1,0 +1,8 @@
+https://gemini.google.com/app/2b9b4be274e7e1d1?hl=en-IN
+
+---------------------------------------------------------------------------------------
+Spring Cloud Gateway Server WebFlux Spring Cloud Gateway Server Web MVC difference between them
+--------------------------------------------------------------------------------------------
+https://www.youtube.com/shorts/wKoEl3hk8dE?feature=share   ----> springboot design pattern
+https://www.youtube.com/shorts/ijCcNJ4PDWk?feature=share --> interview
+https://www.youtube.com/shorts/qQcSyd99mDY?feature=share --> why redis fst
