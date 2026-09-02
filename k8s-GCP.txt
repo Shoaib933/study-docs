@@ -84,7 +84,7 @@ kubectl get pods -n lovable-core -w
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 CI/CD Security (Workload Identity Federation)
 We must allow GitHub Actions to securely deploy to GKE without downloading or storing static JSON
 keys. We use OIDC Trust.
